@@ -1,15 +1,19 @@
 import type { PropsWithChildren } from 'react';
 
 const Root = ({ children }: PropsWithChildren<{}>) => {
-  return <div className="h-screen w-screen">{children}</div>;
+  return (
+    <div className="h-screen w-screen p-8 bg-green-300">
+      <div className="h-full w-full bg-white flex flex-col">{children}</div>
+    </div>
+  );
 };
 
 const Header = ({ children }: PropsWithChildren<{}>) => {
-  return <header className="">{children}</header>;
+  return <header>{children}</header>;
 };
 
 const Content = ({ children }: PropsWithChildren<{}>) => {
-  return <main>{children}</main>;
+  return <div className="flex-1">{children}</div>;
 };
 
 Root.displayName = 'HomeTemplate.Root';

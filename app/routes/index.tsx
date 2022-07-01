@@ -2,18 +2,21 @@ import type { ReactElement } from 'react';
 
 import RootTemplate from '~/templates/RootTemplate';
 import Navbar from '~/components/common/Navbar';
+import Footer from '~/components/Home/Footer';
+import MainTitle from '~/components/Home/MainTitle';
 
 const Index = (): ReactElement => {
   return (
     <RootTemplate.Root>
-      <div className="h-full w-full p-8 bg-green-300">
-        <div className="h-full w-full bg-white">
-          <RootTemplate.Header>
-            <Navbar />
-          </RootTemplate.Header>
-          <RootTemplate.Content>컨텐츠</RootTemplate.Content>
+      <RootTemplate.Header>
+        <Navbar />
+      </RootTemplate.Header>
+      <RootTemplate.Content>
+        <div className=" h-full flex flex-col">
+          <MainTitle />
+          <Footer />
         </div>
-      </div>
+      </RootTemplate.Content>
     </RootTemplate.Root>
   );
 };
