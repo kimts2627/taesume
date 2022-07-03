@@ -11,7 +11,7 @@ const NAV_MENUS = [
 
 const Navbar = (): ReactElement => {
   return (
-    <nav className="h-24 w-full flex justify-between items-center px-8">
+    <nav className="h-24 w-full flex justify-between items-center px-8 font-light">
       <span>Kim Taesu</span>
       <ul className="flex gap-8">
         {NAV_MENUS.map((item) => (
