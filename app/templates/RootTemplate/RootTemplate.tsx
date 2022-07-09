@@ -2,8 +2,8 @@ import type { PropsWithChildren } from 'react';
 
 const Root = ({ children }: PropsWithChildren<{}>) => {
   return (
-    <div className="h-screen w-screen p-8 bg-identity-green">
-      <div className="h-full w-full bg-white flex flex-col">{children}</div>
+    <div className="h-screen w-screen p-8 h-full w-full bg-white flex flex-col">
+      {children}
     </div>
   );
 };
