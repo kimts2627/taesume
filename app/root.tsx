@@ -36,6 +36,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <div className="absolute top-0 left-0 h-screen w-screen bg-identity-green z-0" />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
